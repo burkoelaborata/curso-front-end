@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles/calculadora.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <table>
+        <tr>
+          <input type="text" id="input" />
+        </tr>
+        <tr>
+          <td><button onclick="appendValue('7')">7</button></td>
+          <td><button onclick="appendValue('8')">8</button></td>
+          <td><button onclick="appendValue('9')">9</button></td>
+          <td><button onclick="appendValue('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendValue('4')">4</button></td>
+          <td><button onclick="appendValue('5')">5</button></td>
+          <td><button onclick="appendValue('6')">6</button></td>
+          <td><button onclick="appendValue('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendValue('1')">1</button></td>
+          <td><button onclick="appendValue('2')">2</button></td>
+          <td><button onclick="appendValue('3')">3</button></td>
+          <td><button onclick="appendValue('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendValue('0')">0</button></td>
+          <td><button onclick="appendValue('.')">.</button></td>
+          <td><button onclick="calculate()">=</button></td>
+          <td><button onclick="appendValue('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="clearInput()">C</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="./scripts/calculadora.js"></script>
+  </body>
+</html>
