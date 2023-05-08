@@ -15,17 +15,18 @@
 
   <!-- Cria uma galeria de imagens com três imagens -->
   <div class="gallery">
-    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
-    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
-    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
+    <a href="https://picsum.photos/800/500" data-lightbox="gallery"><img src="https://picsum.photos/200/100"></a>
+    <a href="https://picsum.photos/800/500" data-lightbox="gallery"><img src="https://picsum.photos/200/100"></a>
+    <a href="https://picsum.photos/800/500" data-lightbox="gallery"><img src="https://picsum.photos/200/100"></a>
   </div>
 
   <!-- Inicializa o Lightbox na galeria de imagens -->
   <script>
-    $(document).ready(function(){
-      $('.gallery a').lightbox();
-    });
-  </script>
-
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel':	"Minha galeria %1 of %2"
+    })
+</script>
 </body>
 </html>
