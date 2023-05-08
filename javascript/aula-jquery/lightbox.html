@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de uso do Lightbox</title>
+  
+  <!-- Importa as bibliotecas jQuery e Lightbox -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  
+  <!-- Importa o arquivo CSS do Lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+
+  <!-- Cria uma galeria de imagens com três imagens -->
+  <div class="gallery">
+    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
+    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
+    <a href="https://via.placeholder.com/800x600.png" data-lightbox="gallery"><img src="https://via.placeholder.com/150x100.png"></a>
+  </div>
+
+  <!-- Inicializa o Lightbox na galeria de imagens -->
+  <script>
+    $(document).ready(function(){
+      $('.gallery a').lightbox();
+    });
+  </script>
+
+</body>
+</html>
